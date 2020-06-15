@@ -11,6 +11,7 @@ func main() {
 			fmt.Print(i, "44 *")
 			fmt.Print("-")
 <<<<<<< HEAD
+<<<<<<< HEAD
 			fmt.Print("step2")
 =======
 			fmt.Print("step5")
@@ -18,6 +19,12 @@ func main() {
 =======
 			fmt.Print("step1")
 >>>>>>> origin/aa
+=======
+			fmt.Print("step7")
+=======
+			fmt.Print("step6")
+>>>>>>> origin/minus
+>>>>>>> origin/plus
 
 		}
 		fmt.Println()
