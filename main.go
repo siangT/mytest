@@ -6,10 +6,14 @@ func main() {
 	for i := 1; i <= 5; i++ {
 		for j := 1; j <= i; j++ {
 			fmt.Print(i, "2 *")
+<<<<<<< HEAD
 			fmt.Print("1")
 			fmt.Print(i, "44 *")
 			fmt.Print("-")
 			fmt.Print("step2")
+=======
+			fmt.Print("step5")
+>>>>>>> origin/nplus
 
 		}
 		fmt.Println()
