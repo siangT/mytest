@@ -7,7 +7,7 @@ func main() {
 		for j := 1; j <= i; j++ {
 			fmt.Print(i, "44 *")
 			fmt.Print("-")
-			fmt.Print("new")
+			fmt.Print("step6")
 
 		}
 		fmt.Println()
