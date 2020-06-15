@@ -3,7 +3,10 @@ package main
 import "fmt"
 
 func main() {
-    fmt.Println("helang")
-
-    fmt.Println("hello mysql")
+	for i := 1; i <= 5; i++ {
+		for j := 1; j <= i; j++ {
+			fmt.Print("*")
+		}
+		fmt.Println()
+	}
 }
