@@ -1,19 +1,34 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"sort"
+)
 
 func main() {
-	for i := 1; i <= 5; i++ {
-		for j := 1; j <= i; j++ {
-			fmt.Print(i, "2 *")
-			fmt.Print("1")
-			fmt.Print(i, "44 *")
-			fmt.Print("-")
-			fmt.Print("step2")
-			fmt.Print("step5")
-
-		}
-		fmt.Println()
+	h := map[string]int{
+		"something": 10,
+		"yo":        20,
+		"blah":      20,
 	}
-	fmt.Println("qq")
+
+	type hv struct {
+		Key   string
+		Value int
+	}
+
+	var hv1 []hv
+	for k, v := range h {
+		hv1 = append(hv1, hv{k, v})
+	}
+
+	sort.Slice(hv1, func(i, j int) bool {
+
+		return hv1[i].Value < hv1[j].Value
+	})
+
+	for _, hv := range hv1 {
+		fmt.Printf("%s, %d\n", hv.Key, hv.Value)
+	}
+
 }
